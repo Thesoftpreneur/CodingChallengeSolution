@@ -16,7 +16,7 @@ import java.util.Properties;
 import static io.restassured.RestAssured.given;
 
 public class GistsAPI {
-    private static String gistName;
+    private String gistName;
     private String description;
     private String content;
     private String rsGistName;
@@ -56,7 +56,7 @@ public class GistsAPI {
 
         Response postResponse = given()
                 .auth()
-                .oauth2("ENTER_TOKEN_HERE")
+                .oauth2(PropertiesManager.getProperty("token"))
                 .contentType("application/json")
                 .accept("application/vnd.github.v3+json")
                 .body(gist.toString())
@@ -72,7 +72,7 @@ public class GistsAPI {
 
         Response getResponse = given()
                 .auth()
-                .oauth2("ENTER_TOKEN_HERE")
+                .oauth2(PropertiesManager.getProperty("token"))
                 .contentType("application/json")
                 .accept("application/vnd.github.v3+json")
                 .when()
@@ -92,7 +92,7 @@ public class GistsAPI {
 
     @Then("the gist name is {string}")
     public void theGistNameIs(String expectedGistName) {
-        Assertions.assertEquals(expectedGistName, gistName);
+        Assertions.assertEquals(expectedGistName, rsGistName);
     }
 
     @Then("the gist description is {string}")
