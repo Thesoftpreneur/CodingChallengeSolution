@@ -43,8 +43,6 @@ public class GistsAPI {
     @When("a request is sent")
     public void aRequestIsSent() {
 
-        FileReader reader=new FileReader("db.properties");
-
         JSONObject file = new JSONObject();
         file.put("content", content);
 
@@ -58,7 +56,7 @@ public class GistsAPI {
 
         Response postResponse = given()
                 .auth()
-                .oauth2("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")
+                .oauth2("ENTER_TOKEN_HERE")
                 .contentType("application/json")
                 .accept("application/vnd.github.v3+json")
                 .body(gist.toString())
@@ -74,7 +72,7 @@ public class GistsAPI {
 
         Response getResponse = given()
                 .auth()
-                .oauth2("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")
+                .oauth2("ENTER_TOKEN_HERE")
                 .contentType("application/json")
                 .accept("application/vnd.github.v3+json")
                 .when()
