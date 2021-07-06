@@ -1,0 +1,1289 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-05T21:15:06.962Z",
+        "line": 4,
+        "name": "Create a Gist",
+        "description": "",
+        "id": "gists-api;create-a-gist",
+        "after": [
+          {
+            "result": {
+              "duration": 997600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.nothing()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3990500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a gist name: \"Lorem Ipsum\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lorem Ipsum\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.an_open_browser(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Gists API",
+    "description": "  The Gists API should be able to do CRUD operations",
+    "id": "gists-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/softprenuer/features/gists.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-05T21:15:07.111Z",
+        "line": 16,
+        "name": "The name match-case checkbox adds case sensitivity to the search results",
+        "description": "",
+        "id": "table-filtering;the-name-match-case-checkbox-adds-case-sensitivity-to-the-search-results;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 208444400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.nothing()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1553966900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "an open browser",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.an_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 455771100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to the main page",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_navigates_to_the_main_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 145610600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user selects the main match-case checkbox",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_selects_the_main_match_case_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123670400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user inputs \"Postimex\" into the searchbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Postimex\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userInputsIntoTheSearchbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119678600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user chooses \"Name\" filter option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userChoosesFilterOption(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41887500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "only filtered names with \"Postimex\" are shown with case sensitivity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Postimex\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.onlyFilteredNamesWithAreShownWithCaseSensitivity(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31914900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the number of results is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.theNumberOfResultsIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Selenium"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-05T21:15:09.819Z",
+        "line": 17,
+        "name": "The name match-case checkbox adds case sensitivity to the search results",
+        "description": "",
+        "id": "table-filtering;the-name-match-case-checkbox-adds-case-sensitivity-to-the-search-results;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 190496700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.nothing()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 892738000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "an open browser",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.an_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 449795900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to the main page",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_navigates_to_the_main_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93747700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user selects the main match-case checkbox",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_selects_the_main_match_case_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107712700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user inputs \"postimex\" into the searchbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"postimex\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userInputsIntoTheSearchbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104716900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user chooses \"Name\" filter option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userChoosesFilterOption(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31915600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "only filtered names with \"postimex\" are shown with case sensitivity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"postimex\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.onlyFilteredNamesWithAreShownWithCaseSensitivity(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43884200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the number of results is \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.theNumberOfResultsIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Selenium"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-05T21:15:11.752Z",
+        "line": 18,
+        "name": "The name match-case checkbox adds case sensitivity to the search results",
+        "description": "",
+        "id": "table-filtering;the-name-match-case-checkbox-adds-case-sensitivity-to-the-search-results;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1230357700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 752200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.nothing()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 782905900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "an open browser",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.an_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 392948300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to the main page",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_navigates_to_the_main_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80783800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user selects the main match-case checkbox",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_selects_the_main_match_case_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 155581600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user inputs \"Melbourne\" into the searchbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Melbourne\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userInputsIntoTheSearchbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91753500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user chooses \"Name\" filter option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userChoosesFilterOption(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19948100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "only filtered names with \"Melbourne\" are shown with case sensitivity",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Melbourne\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.onlyFilteredNamesWithAreShownWithCaseSensitivity(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37897300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the number of results is \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.theNumberOfResultsIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Selenium"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-05T21:15:14.556Z",
+        "line": 30,
+        "name": "The name filter filters by name",
+        "description": "",
+        "id": "table-filtering;the-name-filter-filters-by-name;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1192691300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.nothing()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 773283100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "an open browser",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.an_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 367023700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user navigates to the main page",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_navigates_to_the_main_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 137628900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user inputs \"Postimex\" into the searchbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Postimex\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userInputsIntoTheSearchbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105717800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user chooses \"Name\" filter option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userChoosesFilterOption(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40889200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "only filtered names with \"Postimex\" are shown regardless of case",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Postimex\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.onlyFilteredNamesWithAreShownRegardlessOfCase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38897900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the number of results is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.theNumberOfResultsIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Selenium"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-05T21:15:17.223Z",
+        "line": 31,
+        "name": "The name filter filters by name",
+        "description": "",
+        "id": "table-filtering;the-name-filter-filters-by-name;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 242349400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.nothing()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 780241900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "an open browser",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.an_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 317151600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user navigates to the main page",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_navigates_to_the_main_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144612600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user inputs \"postimex\" into the searchbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"postimex\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userInputsIntoTheSearchbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 95743300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user chooses \"Name\" filter option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userChoosesFilterOption(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35904900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "only filtered names with \"postimex\" are shown regardless of case",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"postimex\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.onlyFilteredNamesWithAreShownRegardlessOfCase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56847600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the number of results is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.theNumberOfResultsIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Selenium"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-05T21:15:18.905Z",
+        "line": 32,
+        "name": "The name filter filters by name",
+        "description": "",
+        "id": "table-filtering;the-name-filter-filters-by-name;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1205844500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.nothing()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 899592400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "an open browser",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.an_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 351060700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user navigates to the main page",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_navigates_to_the_main_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 138756300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user inputs \"Melbourne\" into the searchbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Melbourne\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userInputsIntoTheSearchbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100603700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user chooses \"Name\" filter option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Name\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userChoosesFilterOption(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22937800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "only filtered names with \"Melbourne\" are shown regardless of case",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Melbourne\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.onlyFilteredNamesWithAreShownRegardlessOfCase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48869100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the number of results is \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.theNumberOfResultsIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Selenium"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-05T21:15:21.682Z",
+        "line": 44,
+        "name": "The city filter filters by city",
+        "description": "",
+        "id": "table-filtering;the-city-filter-filters-by-city;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1243346900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.nothing()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 796795400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "an open browser",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.an_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 360036300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user navigates to the main page",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_navigates_to_the_main_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 145609900,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user inputs \"Postimex\" into the searchbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Postimex\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userInputsIntoTheSearchbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153589300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user chooses \"City\" filter option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"City\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userChoosesFilterOption(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18947800,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "only filtered cities with \"Postimex\" are shown regardless of case",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Postimex\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.onlyFilteredCitiesWithAreShownRegardlessOfCase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 33800400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the number of results is \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.theNumberOfResultsIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Selenium"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-05T21:15:24.445Z",
+        "line": 45,
+        "name": "The city filter filters by city",
+        "description": "",
+        "id": "table-filtering;the-city-filter-filters-by-city;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 214425200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.nothing()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 836161100,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "an open browser",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.an_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 297206000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user navigates to the main page",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_navigates_to_the_main_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 139625300,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user inputs \"postimex\" into the searchbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"postimex\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userInputsIntoTheSearchbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 178522300,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user chooses \"City\" filter option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"City\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userChoosesFilterOption(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15956300,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "only filtered cities with \"postimex\" are shown regardless of case",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"postimex\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.onlyFilteredCitiesWithAreShownRegardlessOfCase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30917200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the number of results is \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.theNumberOfResultsIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Selenium"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-05T21:15:26.167Z",
+        "line": 46,
+        "name": "The city filter filters by city",
+        "description": "",
+        "id": "table-filtering;the-city-filter-filters-by-city;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 244345300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.cleanUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.GistsAPI.nothing()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 796907200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "an open browser",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.an_open_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 340090700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user navigates to the main page",
+            "match": {
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.user_navigates_to_the_main_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 129652700,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user inputs \"Melbourne\" into the searchbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Melbourne\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userInputsIntoTheSearchbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 189492200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user chooses \"City\" filter option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"City\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.userChoosesFilterOption(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46873400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "only filtered cities with \"Melbourne\" are shown regardless of case",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Melbourne\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.onlyFilteredCitiesWithAreShownRegardlessOfCase(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32911700,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the number of results is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.softprenuer.stepdefinitions.StepDefinitions.theNumberOfResultsIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Selenium"
+          }
+        ]
+      }
+    ],
+    "name": "Table filtering",
+    "description": "  As a user I want to be able to filter data in the table",
+    "id": "table-filtering",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/softprenuer/features/simple_browser_testing.feature",
+    "tags": [
+      {
+        "name": "@Selenium",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
